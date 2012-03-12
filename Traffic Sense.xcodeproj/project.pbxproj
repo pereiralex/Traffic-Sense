@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA1EC944150DA6DC009C48BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1EC943150DA6DC009C48BB /* UIKit.framework */; };
+		FA1EC946150DA6DC009C48BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1EC945150DA6DC009C48BB /* Foundation.framework */; };
+		FA1EC948150DA6DC009C48BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1EC947150DA6DC009C48BB /* CoreGraphics.framework */; };
+		FA1EC94E150DA6DC009C48BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA1EC94C150DA6DC009C48BB /* InfoPlist.strings */; };
+		FA1EC950150DA6DC009C48BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC94F150DA6DC009C48BB /* main.m */; };
+		FA1EC954150DA6DC009C48BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC953150DA6DC009C48BB /* AppDelegate.m */; };
+		FA1EC967150DA728009C48BB /* GTM in Resources */ = {isa = PBXBuildFile; fileRef = FA1EC963150DA728009C48BB /* GTM */; };
+		FA1EC968150DA728009C48BB /* QSStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC965150DA728009C48BB /* QSStrings.m */; };
+		FA1EC972150DA7AC009C48BB /* CoreLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC971150DA7AC009C48BB /* CoreLocationController.m */; };
+		FA1EC97A150DA83F009C48BB /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC979150DA83F009C48BB /* Timer.m */; };
+		FA1EC97D150DA855009C48BB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1EC97C150DA855009C48BB /* CoreData.framework */; };
+		FA1EC97F150DA85A009C48BB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1EC97E150DA85A009C48BB /* MapKit.framework */; };
+		FA1EC981150DA860009C48BB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1EC980150DA860009C48BB /* CoreLocation.framework */; };
+		FA1EC988150DA8B8009C48BB /* SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC986150DA8B8009C48BB /* SetupViewController.m */; };
+		FA1EC989150DA8B8009C48BB /* SetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1EC987150DA8B8009C48BB /* SetupViewController.xib */; };
+		FA1EC992150DAB5E009C48BB /* BGImage.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1EC991150DAB5E009C48BB /* BGImage.png */; };
+		FA1EC996150DAB8B009C48BB /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC994150DAB8B009C48BB /* MapViewController.m */; };
+		FA1EC997150DAB8B009C48BB /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1EC995150DAB8B009C48BB /* MapViewController.xib */; };
+		FA1EC999150DB3E9009C48BB /* lightOFF.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1EC98C150DAB26009C48BB /* lightOFF.png */; };
+		FA1EC99A150DB3E9009C48BB /* lightON.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1EC98D150DAB26009C48BB /* lightON.png */; };
+		FA1EC99C150DB3E9009C48BB /* SmallBox.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1EC98F150DAB26009C48BB /* SmallBox.png */; };
+		FA1EC99E150DB973009C48BB /* NavigationBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1EC99D150DB973009C48BB /* NavigationBar@2x.png */; };
+		FA1ECA18150EAFDD009C48BB /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA1ECA16150EAFDD009C48BB /* Database.xcdatamodeld */; };
+		FA1ECA1A150EB1B7009C48BB /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1ECA19150EB1B7009C48BB /* CoreMotion.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA1EC93F150DA6DC009C48BB /* Traffic Sense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Traffic Sense.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1EC943150DA6DC009C48BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FA1EC945150DA6DC009C48BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA1EC947150DA6DC009C48BB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FA1EC94B150DA6DC009C48BB /* Traffic Sense-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Traffic Sense-Info.plist"; sourceTree = "<group>"; };
+		FA1EC94D150DA6DC009C48BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA1EC94F150DA6DC009C48BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA1EC951150DA6DC009C48BB /* Traffic Sense-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Traffic Sense-Prefix.pch"; sourceTree = "<group>"; };
+		FA1EC952150DA6DC009C48BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA1EC953150DA6DC009C48BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA1EC963150DA728009C48BB /* GTM */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GTM; path = ../SenseTechnicDemo/QSUtilities/GTM; sourceTree = "<group>"; };
+		FA1EC964150DA728009C48BB /* QSStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QSStrings.h; path = ../SenseTechnicDemo/QSUtilities/QSStrings.h; sourceTree = "<group>"; };
+		FA1EC965150DA728009C48BB /* QSStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QSStrings.m; path = ../SenseTechnicDemo/QSUtilities/QSStrings.m; sourceTree = "<group>"; };
+		FA1EC966150DA728009C48BB /* QSUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QSUtilities.h; path = ../SenseTechnicDemo/QSUtilities/QSUtilities.h; sourceTree = "<group>"; };
+		FA1EC96D150DA78B009C48BB /* SenseTecnicManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SenseTecnicManager.h; path = ../../SimpleMotion/SimpleMotion/SenseTecnicManager/SenseTecnicManager.h; sourceTree = "<group>"; };
+		FA1EC96E150DA78B009C48BB /* SenseTecnicManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SenseTecnicManager.m; path = ../../SimpleMotion/SimpleMotion/SenseTecnicManager/SenseTecnicManager.m; sourceTree = "<group>"; };
+		FA1EC970150DA7AC009C48BB /* CoreLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreLocationController.h; path = ../../SimpleGPS/SimpleGPS/CoreLocationController.h; sourceTree = "<group>"; };
+		FA1EC971150DA7AC009C48BB /* CoreLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreLocationController.m; path = ../../SimpleGPS/SimpleGPS/CoreLocationController.m; sourceTree = "<group>"; };
+		FA1EC978150DA83F009C48BB /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		FA1EC979150DA83F009C48BB /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
+		FA1EC97C150DA855009C48BB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FA1EC97E150DA85A009C48BB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FA1EC980150DA860009C48BB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FA1EC985150DA8B8009C48BB /* SetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupViewController.h; sourceTree = "<group>"; };
+		FA1EC986150DA8B8009C48BB /* SetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupViewController.m; sourceTree = "<group>"; };
+		FA1EC987150DA8B8009C48BB /* SetupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetupViewController.xib; sourceTree = "<group>"; };
+		FA1EC98C150DAB26009C48BB /* lightOFF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lightOFF.png; path = "../../../../../Documents/Design/Traffic Sense/lightOFF.png"; sourceTree = "<group>"; };
+		FA1EC98D150DAB26009C48BB /* lightON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lightON.png; path = "../../../../../Documents/Design/Traffic Sense/lightON.png"; sourceTree = "<group>"; };
+		FA1EC98F150DAB26009C48BB /* SmallBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SmallBox.png; path = "../../../../../Documents/Design/Traffic Sense/SmallBox.png"; sourceTree = "<group>"; };
+		FA1EC991150DAB5E009C48BB /* BGImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BGImage.png; path = "../../../../../Documents/Design/Traffic Sense/BGImage.png"; sourceTree = "<group>"; };
+		FA1EC993150DAB8B009C48BB /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		FA1EC994150DAB8B009C48BB /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		FA1EC995150DAB8B009C48BB /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		FA1EC99D150DB973009C48BB /* NavigationBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NavigationBar@2x.png"; path = "../../../../../Documents/Design/Traffic Sense/NavigationBar@2x.png"; sourceTree = "<group>"; };
+		FA1ECA17150EAFDD009C48BB /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
+		FA1ECA19150EB1B7009C48BB /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA1EC93C150DA6DC009C48BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1ECA1A150EB1B7009C48BB /* CoreMotion.framework in Frameworks */,
+				FA1EC981150DA860009C48BB /* CoreLocation.framework in Frameworks */,
+				FA1EC97F150DA85A009C48BB /* MapKit.framework in Frameworks */,
+				FA1EC97D150DA855009C48BB /* CoreData.framework in Frameworks */,
+				FA1EC944150DA6DC009C48BB /* UIKit.framework in Frameworks */,
+				FA1EC946150DA6DC009C48BB /* Foundation.framework in Frameworks */,
+				FA1EC948150DA6DC009C48BB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA1EC934150DA6DB009C48BB = {
+			isa = PBXGroup;
+			children = (
+				FA1EC949150DA6DC009C48BB /* Traffic Sense(new) */,
+				FA1EC942150DA6DC009C48BB /* Frameworks */,
+				FA1EC940150DA6DC009C48BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA1EC940150DA6DC009C48BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA1EC93F150DA6DC009C48BB /* Traffic Sense.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA1EC942150DA6DC009C48BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA1ECA19150EB1B7009C48BB /* CoreMotion.framework */,
+				FA1EC980150DA860009C48BB /* CoreLocation.framework */,
+				FA1EC97E150DA85A009C48BB /* MapKit.framework */,
+				FA1EC97C150DA855009C48BB /* CoreData.framework */,
+				FA1EC943150DA6DC009C48BB /* UIKit.framework */,
+				FA1EC945150DA6DC009C48BB /* Foundation.framework */,
+				FA1EC947150DA6DC009C48BB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA1EC949150DA6DC009C48BB /* Traffic Sense(new) */ = {
+			isa = PBXGroup;
+			children = (
+				FA1ECA16150EAFDD009C48BB /* Database.xcdatamodeld */,
+				FA1EC990150DAB2E009C48BB /* Images */,
+				FA1EC960150DA6E8009C48BB /* Application Delegate */,
+				FA1EC98A150DA8BB009C48BB /* Setup View */,
+				FA1EC998150DAB91009C48BB /* Map View */,
+				FA1EC96A150DA742009C48BB /* Libraries & Interfaces */,
+				FA1EC94A150DA6DC009C48BB /* Supporting Files */,
+			);
+			path = "Traffic Sense(new)";
+			sourceTree = "<group>";
+		};
+		FA1EC94A150DA6DC009C48BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA1EC94B150DA6DC009C48BB /* Traffic Sense-Info.plist */,
+				FA1EC94C150DA6DC009C48BB /* InfoPlist.strings */,
+				FA1EC94F150DA6DC009C48BB /* main.m */,
+				FA1EC951150DA6DC009C48BB /* Traffic Sense-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA1EC960150DA6E8009C48BB /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				FA1EC952150DA6DC009C48BB /* AppDelegate.h */,
+				FA1EC953150DA6DC009C48BB /* AppDelegate.m */,
+			);
+			name = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		FA1EC969150DA72D009C48BB /* Base64 Library */ = {
+			isa = PBXGroup;
+			children = (
+				FA1EC963150DA728009C48BB /* GTM */,
+				FA1EC964150DA728009C48BB /* QSStrings.h */,
+				FA1EC965150DA728009C48BB /* QSStrings.m */,
+				FA1EC966150DA728009C48BB /* QSUtilities.h */,
+			);
+			name = "Base64 Library";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FA1EC96A150DA742009C48BB /* Libraries & Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				FA1EC97B150DA845009C48BB /* Timer */,
+				FA1EC973150DA7B1009C48BB /* Core Location */,
+				FA1EC96F150DA795009C48BB /* Sense Tecnic */,
+				FA1EC969150DA72D009C48BB /* Base64 Library */,
+			);
+			name = "Libraries & Interfaces";
+			sourceTree = "<group>";
+		};
+		FA1EC96F150DA795009C48BB /* Sense Tecnic */ = {
+			isa = PBXGroup;
+			children = (
+				FA1EC96D150DA78B009C48BB /* SenseTecnicManager.h */,
+				FA1EC96E150DA78B009C48BB /* SenseTecnicManager.m */,
+			);
+			name = "Sense Tecnic";
+			sourceTree = "<group>";
+		};
+		FA1EC973150DA7B1009C48BB /* Core Location */ = {
+			isa = PBXGroup;
+			children = (
+				FA1EC970150DA7AC009C48BB /* CoreLocationController.h */,
+				FA1EC971150DA7AC009C48BB /* CoreLocationController.m */,
+			);
+			name = "Core Location";
+			sourceTree = "<group>";
+		};
+		FA1EC97B150DA845009C48BB /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				FA1EC978150DA83F009C48BB /* Timer.h */,
+				FA1EC979150DA83F009C48BB /* Timer.m */,
+			);
+			name = Timer;
+			sourceTree = "<group>";
+		};
+		FA1EC98A150DA8BB009C48BB /* Setup View */ = {
+			isa = PBXGroup;
+			children = (
+				FA1EC985150DA8B8009C48BB /* SetupViewController.h */,
+				FA1EC986150DA8B8009C48BB /* SetupViewController.m */,
+				FA1EC987150DA8B8009C48BB /* SetupViewController.xib */,
+			);
+			name = "Setup View";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FA1EC990150DAB2E009C48BB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FA1EC99D150DB973009C48BB /* NavigationBar@2x.png */,
+				FA1EC991150DAB5E009C48BB /* BGImage.png */,
+				FA1EC98C150DAB26009C48BB /* lightOFF.png */,
+				FA1EC98D150DAB26009C48BB /* lightON.png */,
+				FA1EC98F150DAB26009C48BB /* SmallBox.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		FA1EC998150DAB91009C48BB /* Map View */ = {
+			isa = PBXGroup;
+			children = (
+				FA1EC993150DAB8B009C48BB /* MapViewController.h */,
+				FA1EC994150DAB8B009C48BB /* MapViewController.m */,
+				FA1EC995150DAB8B009C48BB /* MapViewController.xib */,
+			);
+			name = "Map View";
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA1EC93E150DA6DC009C48BB /* Traffic Sense */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA1EC95D150DA6DC009C48BB /* Build configuration list for PBXNativeTarget "Traffic Sense" */;
+			buildPhases = (
+				FA1EC93B150DA6DC009C48BB /* Sources */,
+				FA1EC93C150DA6DC009C48BB /* Frameworks */,
+				FA1EC93D150DA6DC009C48BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Traffic Sense";
+			productName = "Traffic Sense(new)";
+			productReference = FA1EC93F150DA6DC009C48BB /* Traffic Sense.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA1EC936150DA6DB009C48BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = UBC;
+			};
+			buildConfigurationList = FA1EC939150DA6DB009C48BB /* Build configuration list for PBXProject "Traffic Sense" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA1EC934150DA6DB009C48BB;
+			productRefGroup = FA1EC940150DA6DC009C48BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA1EC93E150DA6DC009C48BB /* Traffic Sense */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA1EC93D150DA6DC009C48BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1EC999150DB3E9009C48BB /* lightOFF.png in Resources */,
+				FA1EC99A150DB3E9009C48BB /* lightON.png in Resources */,
+				FA1EC99C150DB3E9009C48BB /* SmallBox.png in Resources */,
+				FA1EC94E150DA6DC009C48BB /* InfoPlist.strings in Resources */,
+				FA1EC967150DA728009C48BB /* GTM in Resources */,
+				FA1EC989150DA8B8009C48BB /* SetupViewController.xib in Resources */,
+				FA1EC992150DAB5E009C48BB /* BGImage.png in Resources */,
+				FA1EC997150DAB8B009C48BB /* MapViewController.xib in Resources */,
+				FA1EC99E150DB973009C48BB /* NavigationBar@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA1EC93B150DA6DC009C48BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1EC950150DA6DC009C48BB /* main.m in Sources */,
+				FA1EC954150DA6DC009C48BB /* AppDelegate.m in Sources */,
+				FA1EC968150DA728009C48BB /* QSStrings.m in Sources */,
+				FA1EC972150DA7AC009C48BB /* CoreLocationController.m in Sources */,
+				FA1EC97A150DA83F009C48BB /* Timer.m in Sources */,
+				FA1EC988150DA8B8009C48BB /* SetupViewController.m in Sources */,
+				FA1EC996150DAB8B009C48BB /* MapViewController.m in Sources */,
+				FA1ECA18150EAFDD009C48BB /* Database.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA1EC94C150DA6DC009C48BB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA1EC94D150DA6DC009C48BB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA1EC95B150DA6DC009C48BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FA1EC95C150DA6DC009C48BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA1EC95E150DA6DC009C48BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Traffic Sense(new)/Traffic Sense-Prefix.pch";
+				INFOPLIST_FILE = "Traffic Sense(new)/Traffic Sense-Info.plist";
+				PRODUCT_NAME = "Traffic Sense";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FA1EC95F150DA6DC009C48BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Traffic Sense(new)/Traffic Sense-Prefix.pch";
+				INFOPLIST_FILE = "Traffic Sense(new)/Traffic Sense-Info.plist";
+				PRODUCT_NAME = "Traffic Sense";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA1EC939150DA6DB009C48BB /* Build configuration list for PBXProject "Traffic Sense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1EC95B150DA6DC009C48BB /* Debug */,
+				FA1EC95C150DA6DC009C48BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA1EC95D150DA6DC009C48BB /* Build configuration list for PBXNativeTarget "Traffic Sense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1EC95E150DA6DC009C48BB /* Debug */,
+				FA1EC95F150DA6DC009C48BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA1ECA16150EAFDD009C48BB /* Database.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA1ECA17150EAFDD009C48BB /* Database.xcdatamodel */,
+			);
+			currentVersion = FA1ECA17150EAFDD009C48BB /* Database.xcdatamodel */;
+			path = Database.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FA1EC936150DA6DB009C48BB /* Project object */;
+}
