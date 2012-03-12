@@ -7,13 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@class ViewController;
+#import "SetupViewController.h"
+#import "MapViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UINavigationController *navigationController;
+@property (strong, nonatomic) UIViewController *setupViewController;
+@property (strong, nonatomic) UIViewController *mapViewController;
 
-@property (strong, nonatomic) ViewController *viewController;
++(AppDelegate*)sharedAppdelegate;
 
 @end
