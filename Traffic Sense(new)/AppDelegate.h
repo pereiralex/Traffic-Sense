@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SetupViewController.h"
-#import "MapViewController.h"
 #import <CoreData/CoreData.h>
+
+@class MapViewController;
+@class SetupViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA1914BA1517DE040015993E /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1914B91517DE040015993E /* Timer.m */; };
+		FA1914BD1517DE160015993E /* SenseTecnicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1914BC1517DE160015993E /* SenseTecnicManager.m */; };
 		FA1EC944150DA6DC009C48BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1EC943150DA6DC009C48BB /* UIKit.framework */; };
 		FA1EC946150DA6DC009C48BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1EC945150DA6DC009C48BB /* Foundation.framework */; };
 		FA1EC948150DA6DC009C48BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1EC947150DA6DC009C48BB /* CoreGraphics.framework */; };
@@ -16,24 +18,46 @@
 		FA1EC967150DA728009C48BB /* GTM in Resources */ = {isa = PBXBuildFile; fileRef = FA1EC963150DA728009C48BB /* GTM */; };
 		FA1EC968150DA728009C48BB /* QSStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC965150DA728009C48BB /* QSStrings.m */; };
 		FA1EC972150DA7AC009C48BB /* CoreLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC971150DA7AC009C48BB /* CoreLocationController.m */; };
-		FA1EC97A150DA83F009C48BB /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC979150DA83F009C48BB /* Timer.m */; };
 		FA1EC97D150DA855009C48BB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1EC97C150DA855009C48BB /* CoreData.framework */; };
 		FA1EC97F150DA85A009C48BB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1EC97E150DA85A009C48BB /* MapKit.framework */; };
 		FA1EC981150DA860009C48BB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1EC980150DA860009C48BB /* CoreLocation.framework */; };
 		FA1EC988150DA8B8009C48BB /* SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC986150DA8B8009C48BB /* SetupViewController.m */; };
 		FA1EC989150DA8B8009C48BB /* SetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1EC987150DA8B8009C48BB /* SetupViewController.xib */; };
-		FA1EC992150DAB5E009C48BB /* BGImage.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1EC991150DAB5E009C48BB /* BGImage.png */; };
 		FA1EC996150DAB8B009C48BB /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1EC994150DAB8B009C48BB /* MapViewController.m */; };
 		FA1EC997150DAB8B009C48BB /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1EC995150DAB8B009C48BB /* MapViewController.xib */; };
-		FA1EC999150DB3E9009C48BB /* lightOFF.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1EC98C150DAB26009C48BB /* lightOFF.png */; };
-		FA1EC99A150DB3E9009C48BB /* lightON.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1EC98D150DAB26009C48BB /* lightON.png */; };
-		FA1EC99C150DB3E9009C48BB /* SmallBox.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1EC98F150DAB26009C48BB /* SmallBox.png */; };
+		FA1EC999150DB3E9009C48BB /* lightOFF@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1EC98C150DAB26009C48BB /* lightOFF@2x.png */; };
+		FA1EC99A150DB3E9009C48BB /* lightON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1EC98D150DAB26009C48BB /* lightON@2x.png */; };
+		FA1EC99C150DB3E9009C48BB /* SmallBox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1EC98F150DAB26009C48BB /* SmallBox@2x.png */; };
 		FA1EC99E150DB973009C48BB /* NavigationBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1EC99D150DB973009C48BB /* NavigationBar@2x.png */; };
 		FA1ECA18150EAFDD009C48BB /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA1ECA16150EAFDD009C48BB /* Database.xcdatamodeld */; };
 		FA1ECA1A150EB1B7009C48BB /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1ECA19150EB1B7009C48BB /* CoreMotion.framework */; };
+		FA1ED3C6150EBD8D007449B4 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1ED3C5150EBD8D007449B4 /* icon@2x.png */; };
+		FA465BE4150FFB9100A1B99B /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = FA465BCC150FFB9100A1B99B /* NSObject+SBJson.m */; };
+		FA465BE5150FFB9100A1B99B /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FA465BCF150FFB9100A1B99B /* SBJsonParser.m */; };
+		FA465BE6150FFB9100A1B99B /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FA465BD1150FFB9100A1B99B /* SBJsonStreamParser.m */; };
+		FA465BE7150FFB9100A1B99B /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA465BD3150FFB9100A1B99B /* SBJsonStreamParserAccumulator.m */; };
+		FA465BE8150FFB9100A1B99B /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA465BD5150FFB9100A1B99B /* SBJsonStreamParserAdapter.m */; };
+		FA465BE9150FFB9100A1B99B /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = FA465BD7150FFB9100A1B99B /* SBJsonStreamParserState.m */; };
+		FA465BEA150FFB9100A1B99B /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA465BD9150FFB9100A1B99B /* SBJsonStreamWriter.m */; };
+		FA465BEB150FFB9100A1B99B /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA465BDB150FFB9100A1B99B /* SBJsonStreamWriterAccumulator.m */; };
+		FA465BEC150FFB9100A1B99B /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = FA465BDD150FFB9100A1B99B /* SBJsonStreamWriterState.m */; };
+		FA465BED150FFB9100A1B99B /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = FA465BDF150FFB9100A1B99B /* SBJsonTokeniser.m */; };
+		FA465BEE150FFB9100A1B99B /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = FA465BE1150FFB9100A1B99B /* SBJsonUTF8Stream.m */; };
+		FA465BEF150FFB9100A1B99B /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA465BE3150FFB9100A1B99B /* SBJsonWriter.m */; };
+		FA465C4515101CE300A1B99B /* DataPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = FA465C4415101CE300A1B99B /* DataPoint.m */; };
+		FA7B46C21512F80B00E374C5 /* SetupBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA7B46C11512F80B00E374C5 /* SetupBG@2x.png */; };
+		FA86A596150EF8B00058FB85 /* button-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA86A595150EF8B00058FB85 /* button-1@2x.png */; };
+		FA86A598150EFC5E0058FB85 /* button-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA86A597150EFC5E0058FB85 /* button-2@2x.png */; };
+		FA9E42FB1519497300654617 /* PathLine.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9E42FA1519497300654617 /* PathLine.m */; };
+		FAAB122D151D19A30025AB12 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAB122B151D19A30025AB12 /* SplashViewController.m */; };
+		FAAB122E151D19A30025AB12 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAB122C151D19A30025AB12 /* SplashViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA1914B81517DE040015993E /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Timer.h; path = Timer/Timer.h; sourceTree = "<group>"; };
+		FA1914B91517DE040015993E /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Timer.m; path = Timer/Timer.m; sourceTree = "<group>"; };
+		FA1914BB1517DE160015993E /* SenseTecnicManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SenseTecnicManager.h; path = "Sense Tecnic/SenseTecnicManager.h"; sourceTree = "<group>"; };
+		FA1914BC1517DE160015993E /* SenseTecnicManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SenseTecnicManager.m; path = "Sense Tecnic/SenseTecnicManager.m"; sourceTree = "<group>"; };
 		FA1EC93F150DA6DC009C48BB /* Traffic Sense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Traffic Sense.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1EC943150DA6DC009C48BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FA1EC945150DA6DC009C48BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,28 +72,60 @@
 		FA1EC964150DA728009C48BB /* QSStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QSStrings.h; path = ../SenseTechnicDemo/QSUtilities/QSStrings.h; sourceTree = "<group>"; };
 		FA1EC965150DA728009C48BB /* QSStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QSStrings.m; path = ../SenseTechnicDemo/QSUtilities/QSStrings.m; sourceTree = "<group>"; };
 		FA1EC966150DA728009C48BB /* QSUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QSUtilities.h; path = ../SenseTechnicDemo/QSUtilities/QSUtilities.h; sourceTree = "<group>"; };
-		FA1EC96D150DA78B009C48BB /* SenseTecnicManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SenseTecnicManager.h; path = ../../SimpleMotion/SimpleMotion/SenseTecnicManager/SenseTecnicManager.h; sourceTree = "<group>"; };
-		FA1EC96E150DA78B009C48BB /* SenseTecnicManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SenseTecnicManager.m; path = ../../SimpleMotion/SimpleMotion/SenseTecnicManager/SenseTecnicManager.m; sourceTree = "<group>"; };
 		FA1EC970150DA7AC009C48BB /* CoreLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreLocationController.h; path = ../../SimpleGPS/SimpleGPS/CoreLocationController.h; sourceTree = "<group>"; };
 		FA1EC971150DA7AC009C48BB /* CoreLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreLocationController.m; path = ../../SimpleGPS/SimpleGPS/CoreLocationController.m; sourceTree = "<group>"; };
-		FA1EC978150DA83F009C48BB /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
-		FA1EC979150DA83F009C48BB /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
 		FA1EC97C150DA855009C48BB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FA1EC97E150DA85A009C48BB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FA1EC980150DA860009C48BB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FA1EC985150DA8B8009C48BB /* SetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupViewController.h; sourceTree = "<group>"; };
 		FA1EC986150DA8B8009C48BB /* SetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupViewController.m; sourceTree = "<group>"; };
 		FA1EC987150DA8B8009C48BB /* SetupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetupViewController.xib; sourceTree = "<group>"; };
-		FA1EC98C150DAB26009C48BB /* lightOFF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lightOFF.png; path = "../../../../../Documents/Design/Traffic Sense/lightOFF.png"; sourceTree = "<group>"; };
-		FA1EC98D150DAB26009C48BB /* lightON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lightON.png; path = "../../../../../Documents/Design/Traffic Sense/lightON.png"; sourceTree = "<group>"; };
-		FA1EC98F150DAB26009C48BB /* SmallBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SmallBox.png; path = "../../../../../Documents/Design/Traffic Sense/SmallBox.png"; sourceTree = "<group>"; };
-		FA1EC991150DAB5E009C48BB /* BGImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BGImage.png; path = "../../../../../Documents/Design/Traffic Sense/BGImage.png"; sourceTree = "<group>"; };
+		FA1EC98C150DAB26009C48BB /* lightOFF@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lightOFF@2x.png"; path = "../../../../../Documents/Design/Traffic Sense/lightOFF@2x.png"; sourceTree = "<group>"; };
+		FA1EC98D150DAB26009C48BB /* lightON@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lightON@2x.png"; path = "../../../../../Documents/Design/Traffic Sense/lightON@2x.png"; sourceTree = "<group>"; };
+		FA1EC98F150DAB26009C48BB /* SmallBox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SmallBox@2x.png"; path = "../../../../../Documents/Design/Traffic Sense/SmallBox@2x.png"; sourceTree = "<group>"; };
 		FA1EC993150DAB8B009C48BB /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		FA1EC994150DAB8B009C48BB /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		FA1EC995150DAB8B009C48BB /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		FA1EC99D150DB973009C48BB /* NavigationBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NavigationBar@2x.png"; path = "../../../../../Documents/Design/Traffic Sense/NavigationBar@2x.png"; sourceTree = "<group>"; };
 		FA1ECA17150EAFDD009C48BB /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
 		FA1ECA19150EB1B7009C48BB /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		FA1ED3C5150EBD8D007449B4 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
+		FA465BCB150FFB9100A1B99B /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		FA465BCC150FFB9100A1B99B /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		FA465BCD150FFB9100A1B99B /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		FA465BCE150FFB9100A1B99B /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		FA465BCF150FFB9100A1B99B /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		FA465BD0150FFB9100A1B99B /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		FA465BD1150FFB9100A1B99B /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		FA465BD2150FFB9100A1B99B /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		FA465BD3150FFB9100A1B99B /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		FA465BD4150FFB9100A1B99B /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		FA465BD5150FFB9100A1B99B /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		FA465BD6150FFB9100A1B99B /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		FA465BD7150FFB9100A1B99B /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		FA465BD8150FFB9100A1B99B /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		FA465BD9150FFB9100A1B99B /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		FA465BDA150FFB9100A1B99B /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		FA465BDB150FFB9100A1B99B /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		FA465BDC150FFB9100A1B99B /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		FA465BDD150FFB9100A1B99B /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		FA465BDE150FFB9100A1B99B /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		FA465BDF150FFB9100A1B99B /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		FA465BE0150FFB9100A1B99B /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		FA465BE1150FFB9100A1B99B /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		FA465BE2150FFB9100A1B99B /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		FA465BE3150FFB9100A1B99B /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		FA465C4315101CE300A1B99B /* DataPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataPoint.h; path = ../DataPoint.h; sourceTree = "<group>"; };
+		FA465C4415101CE300A1B99B /* DataPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataPoint.m; path = ../DataPoint.m; sourceTree = "<group>"; };
+		FA7B46C11512F80B00E374C5 /* SetupBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SetupBG@2x.png"; path = "../../../../../Documents/Design/Traffic Sense/SetupBG@2x.png"; sourceTree = "<group>"; };
+		FA86A593150EF5E90058FB85 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		FA86A595150EF8B00058FB85 /* button-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-1@2x.png"; path = "../../../../../Documents/Design/Traffic Sense/button-1@2x.png"; sourceTree = "<group>"; };
+		FA86A597150EFC5E0058FB85 /* button-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-2@2x.png"; path = "../../../../../Documents/Design/Traffic Sense/button-2@2x.png"; sourceTree = "<group>"; };
+		FA9E42F91519497300654617 /* PathLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PathLine.h; path = Overlay/PathLine.h; sourceTree = "<group>"; };
+		FA9E42FA1519497300654617 /* PathLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PathLine.m; path = Overlay/PathLine.m; sourceTree = "<group>"; };
+		FAAB122A151D19A30025AB12 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = SOURCE_ROOT; };
+		FAAB122B151D19A30025AB12 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = SOURCE_ROOT; };
+		FAAB122C151D19A30025AB12 /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +183,10 @@
 				FA1ECA16150EAFDD009C48BB /* Database.xcdatamodeld */,
 				FA1EC990150DAB2E009C48BB /* Images */,
 				FA1EC960150DA6E8009C48BB /* Application Delegate */,
+				FAAB1229151D195E0025AB12 /* Splash View */,
 				FA1EC98A150DA8BB009C48BB /* Setup View */,
 				FA1EC998150DAB91009C48BB /* Map View */,
+				FA9E42F71519491C00654617 /* Overlay */,
 				FA1EC96A150DA742009C48BB /* Libraries & Interfaces */,
 				FA1EC94A150DA6DC009C48BB /* Supporting Files */,
 			);
@@ -170,6 +228,8 @@
 		FA1EC96A150DA742009C48BB /* Libraries & Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				FA465C4615101CF000A1B99B /* Data Point */,
+				FA465BCA150FFB9100A1B99B /* JSON */,
 				FA1EC97B150DA845009C48BB /* Timer */,
 				FA1EC973150DA7B1009C48BB /* Core Location */,
 				FA1EC96F150DA795009C48BB /* Sense Tecnic */,
@@ -181,8 +241,8 @@
 		FA1EC96F150DA795009C48BB /* Sense Tecnic */ = {
 			isa = PBXGroup;
 			children = (
-				FA1EC96D150DA78B009C48BB /* SenseTecnicManager.h */,
-				FA1EC96E150DA78B009C48BB /* SenseTecnicManager.m */,
+				FA1914BB1517DE160015993E /* SenseTecnicManager.h */,
+				FA1914BC1517DE160015993E /* SenseTecnicManager.m */,
 			);
 			name = "Sense Tecnic";
 			sourceTree = "<group>";
@@ -199,8 +259,8 @@
 		FA1EC97B150DA845009C48BB /* Timer */ = {
 			isa = PBXGroup;
 			children = (
-				FA1EC978150DA83F009C48BB /* Timer.h */,
-				FA1EC979150DA83F009C48BB /* Timer.m */,
+				FA1914B81517DE040015993E /* Timer.h */,
+				FA1914B91517DE040015993E /* Timer.m */,
 			);
 			name = Timer;
 			sourceTree = "<group>";
@@ -219,11 +279,15 @@
 		FA1EC990150DAB2E009C48BB /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FA86A593150EF5E90058FB85 /* Default@2x.png */,
+				FA7B46C11512F80B00E374C5 /* SetupBG@2x.png */,
+				FA86A595150EF8B00058FB85 /* button-1@2x.png */,
+				FA86A597150EFC5E0058FB85 /* button-2@2x.png */,
+				FA1ED3C5150EBD8D007449B4 /* icon@2x.png */,
 				FA1EC99D150DB973009C48BB /* NavigationBar@2x.png */,
-				FA1EC991150DAB5E009C48BB /* BGImage.png */,
-				FA1EC98C150DAB26009C48BB /* lightOFF.png */,
-				FA1EC98D150DAB26009C48BB /* lightON.png */,
-				FA1EC98F150DAB26009C48BB /* SmallBox.png */,
+				FA1EC98C150DAB26009C48BB /* lightOFF@2x.png */,
+				FA1EC98D150DAB26009C48BB /* lightON@2x.png */,
+				FA1EC98F150DAB26009C48BB /* SmallBox@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -237,6 +301,67 @@
 			);
 			name = "Map View";
 			path = ..;
+			sourceTree = "<group>";
+		};
+		FA465BCA150FFB9100A1B99B /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				FA465BCB150FFB9100A1B99B /* NSObject+SBJson.h */,
+				FA465BCC150FFB9100A1B99B /* NSObject+SBJson.m */,
+				FA465BCD150FFB9100A1B99B /* SBJson.h */,
+				FA465BCE150FFB9100A1B99B /* SBJsonParser.h */,
+				FA465BCF150FFB9100A1B99B /* SBJsonParser.m */,
+				FA465BD0150FFB9100A1B99B /* SBJsonStreamParser.h */,
+				FA465BD1150FFB9100A1B99B /* SBJsonStreamParser.m */,
+				FA465BD2150FFB9100A1B99B /* SBJsonStreamParserAccumulator.h */,
+				FA465BD3150FFB9100A1B99B /* SBJsonStreamParserAccumulator.m */,
+				FA465BD4150FFB9100A1B99B /* SBJsonStreamParserAdapter.h */,
+				FA465BD5150FFB9100A1B99B /* SBJsonStreamParserAdapter.m */,
+				FA465BD6150FFB9100A1B99B /* SBJsonStreamParserState.h */,
+				FA465BD7150FFB9100A1B99B /* SBJsonStreamParserState.m */,
+				FA465BD8150FFB9100A1B99B /* SBJsonStreamWriter.h */,
+				FA465BD9150FFB9100A1B99B /* SBJsonStreamWriter.m */,
+				FA465BDA150FFB9100A1B99B /* SBJsonStreamWriterAccumulator.h */,
+				FA465BDB150FFB9100A1B99B /* SBJsonStreamWriterAccumulator.m */,
+				FA465BDC150FFB9100A1B99B /* SBJsonStreamWriterState.h */,
+				FA465BDD150FFB9100A1B99B /* SBJsonStreamWriterState.m */,
+				FA465BDE150FFB9100A1B99B /* SBJsonTokeniser.h */,
+				FA465BDF150FFB9100A1B99B /* SBJsonTokeniser.m */,
+				FA465BE0150FFB9100A1B99B /* SBJsonUTF8Stream.h */,
+				FA465BE1150FFB9100A1B99B /* SBJsonUTF8Stream.m */,
+				FA465BE2150FFB9100A1B99B /* SBJsonWriter.h */,
+				FA465BE3150FFB9100A1B99B /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			path = "../../../../../Downloads/stig-json-framework-8637a74/Classes";
+			sourceTree = "<group>";
+		};
+		FA465C4615101CF000A1B99B /* Data Point */ = {
+			isa = PBXGroup;
+			children = (
+				FA465C4315101CE300A1B99B /* DataPoint.h */,
+				FA465C4415101CE300A1B99B /* DataPoint.m */,
+			);
+			name = "Data Point";
+			sourceTree = "<group>";
+		};
+		FA9E42F71519491C00654617 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				FA9E42F91519497300654617 /* PathLine.h */,
+				FA9E42FA1519497300654617 /* PathLine.m */,
+			);
+			name = Overlay;
+			sourceTree = "<group>";
+		};
+		FAAB1229151D195E0025AB12 /* Splash View */ = {
+			isa = PBXGroup;
+			children = (
+				FAAB122A151D19A30025AB12 /* SplashViewController.h */,
+				FAAB122B151D19A30025AB12 /* SplashViewController.m */,
+				FAAB122C151D19A30025AB12 /* SplashViewController.xib */,
+			);
+			name = "Splash View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,15 +415,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA1EC999150DB3E9009C48BB /* lightOFF.png in Resources */,
-				FA1EC99A150DB3E9009C48BB /* lightON.png in Resources */,
-				FA1EC99C150DB3E9009C48BB /* SmallBox.png in Resources */,
+				FA1EC999150DB3E9009C48BB /* lightOFF@2x.png in Resources */,
+				FA1EC99A150DB3E9009C48BB /* lightON@2x.png in Resources */,
+				FA1EC99C150DB3E9009C48BB /* SmallBox@2x.png in Resources */,
 				FA1EC94E150DA6DC009C48BB /* InfoPlist.strings in Resources */,
 				FA1EC967150DA728009C48BB /* GTM in Resources */,
 				FA1EC989150DA8B8009C48BB /* SetupViewController.xib in Resources */,
-				FA1EC992150DAB5E009C48BB /* BGImage.png in Resources */,
 				FA1EC997150DAB8B009C48BB /* MapViewController.xib in Resources */,
 				FA1EC99E150DB973009C48BB /* NavigationBar@2x.png in Resources */,
+				FA1ED3C6150EBD8D007449B4 /* icon@2x.png in Resources */,
+				FA86A596150EF8B00058FB85 /* button-1@2x.png in Resources */,
+				FA86A598150EFC5E0058FB85 /* button-2@2x.png in Resources */,
+				FA7B46C21512F80B00E374C5 /* SetupBG@2x.png in Resources */,
+				FAAB122E151D19A30025AB12 /* SplashViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,10 +442,26 @@
 				FA1EC954150DA6DC009C48BB /* AppDelegate.m in Sources */,
 				FA1EC968150DA728009C48BB /* QSStrings.m in Sources */,
 				FA1EC972150DA7AC009C48BB /* CoreLocationController.m in Sources */,
-				FA1EC97A150DA83F009C48BB /* Timer.m in Sources */,
 				FA1EC988150DA8B8009C48BB /* SetupViewController.m in Sources */,
 				FA1EC996150DAB8B009C48BB /* MapViewController.m in Sources */,
 				FA1ECA18150EAFDD009C48BB /* Database.xcdatamodeld in Sources */,
+				FA465BE4150FFB9100A1B99B /* NSObject+SBJson.m in Sources */,
+				FA465BE5150FFB9100A1B99B /* SBJsonParser.m in Sources */,
+				FA465BE6150FFB9100A1B99B /* SBJsonStreamParser.m in Sources */,
+				FA465BE7150FFB9100A1B99B /* SBJsonStreamParserAccumulator.m in Sources */,
+				FA465BE8150FFB9100A1B99B /* SBJsonStreamParserAdapter.m in Sources */,
+				FA465BE9150FFB9100A1B99B /* SBJsonStreamParserState.m in Sources */,
+				FA465BEA150FFB9100A1B99B /* SBJsonStreamWriter.m in Sources */,
+				FA465BEB150FFB9100A1B99B /* SBJsonStreamWriterAccumulator.m in Sources */,
+				FA465BEC150FFB9100A1B99B /* SBJsonStreamWriterState.m in Sources */,
+				FA465BED150FFB9100A1B99B /* SBJsonTokeniser.m in Sources */,
+				FA465BEE150FFB9100A1B99B /* SBJsonUTF8Stream.m in Sources */,
+				FA465BEF150FFB9100A1B99B /* SBJsonWriter.m in Sources */,
+				FA465C4515101CE300A1B99B /* DataPoint.m in Sources */,
+				FA1914BA1517DE040015993E /* Timer.m in Sources */,
+				FA1914BD1517DE160015993E /* SenseTecnicManager.m in Sources */,
+				FA9E42FB1519497300654617 /* PathLine.m in Sources */,
+				FAAB122D151D19A30025AB12 /* SplashViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,10 +527,14 @@
 		FA1EC95E150DA6DC009C48BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Traffic Sense(new)/Traffic Sense-Prefix.pch";
 				INFOPLIST_FILE = "Traffic Sense(new)/Traffic Sense-Info.plist";
 				PRODUCT_NAME = "Traffic Sense";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -393,10 +542,14 @@
 		FA1EC95F150DA6DC009C48BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Traffic Sense(new)/Traffic Sense-Prefix.pch";
 				INFOPLIST_FILE = "Traffic Sense(new)/Traffic Sense-Info.plist";
 				PRODUCT_NAME = "Traffic Sense";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

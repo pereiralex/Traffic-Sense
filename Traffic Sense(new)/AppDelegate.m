@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "MapViewController.h"
+#import "SetupViewController.h"
+#import "SplashViewController.h"
 
 @implementation AppDelegate
 
@@ -23,6 +26,7 @@
     if (!_mapViewController) {
         _mapViewController = [[MapViewController alloc]initWithNibName:@"MapViewController" bundle:[NSBundle mainBundle]];
     }
+    
     return _mapViewController;
 }
  
@@ -31,27 +35,21 @@
 {
       
     [self customizeAppearance];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     self.setupViewController = [[SetupViewController alloc] initWithNibName:@"SetupViewController" bundle:[NSBundle mainBundle]];
     
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.setupViewController];
-    
-    UISegmentedControl *segControl = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:[NSString stringWithString:@"Setup"], [NSString stringWithString:@"Map"], nil]];
-    segControl.segmentedControlStyle = UISegmentedControlStyleBar;
-    segControl.tintColor = [UIColor darkGrayColor];
-    segControl.frame = CGRectMake(0, 0, 90, 30);
-    segControl.momentary = YES;
-    
-    UIBarButtonItem *segButton = [[UIBarButtonItem alloc] initWithCustomView:segControl];
-    
-    self.navigationController.navigationItem.rightBarButtonItem = segButton;
-    
-    [self.navigationController.toolbar setBarStyle:UIBarStyleBlack];
-   
-    
+    [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
     self.window.rootViewController = self.navigationController;
+    
+    SplashViewController *splashVC = [[SplashViewController alloc] initWithNibName:@"SplashViewController" bundle:[NSBundle mainBundle]];
+    splashVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+   
     [self.window makeKeyAndVisible];
+    //[self.window.rootViewController presentModalViewController:splashVC animated:NO];
+    
     return YES;
 }
 
@@ -70,16 +68,27 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    MapViewController *myMapVC = (MapViewController *) self.mapViewController;
+    myMapVC.backgroundMode = YES;
+    [myMapVC.oneSecondTimer invalidate];
+    
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    
+    MapViewController *myMapVC = (MapViewController *) self.mapViewController;
+    myMapVC.backgroundMode = NO;
+    [myMapVC.oneSecondTimer resetTimer];
+    
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

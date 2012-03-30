@@ -14,21 +14,18 @@
 #import "SetupViewController.h"
 #import "Timer.h"
 #import "AppDelegate.h"
+#import "PathLine.h"
 
 @interface MapViewController : UIViewController <CoreLocationControllerDelegate, MKMapViewDelegate >
 
-//custom transport type
-typedef enum {
-    Still,
-    Walk,
-    Run,
-    Bike,
-    Bus,
-    Drive
-} TransportType;
+
+//UUID
+@property (nonatomic, strong) NSString *myUUID;
 
 //state
+@property (nonatomic) BOOL backgroundMode;
 @property (nonatomic, strong) CLLocation *lastKnownLocation;
+@property (nonatomic, strong) CLHeading *lastKnownHeading;
 @property (nonatomic) BOOL statusLightState;
 @property (nonatomic, strong) NSMutableArray *latestAccelData;
 @property (nonatomic, strong) NSMutableArray *latestSpeedData;
@@ -36,10 +33,18 @@ typedef enum {
 @property (nonatomic) TransportType currentInferredTransportType;
 @property (nonatomic) TransportType previousInferredTransportType;
 @property (nonatomic) TransportType userEnteredTransportType;
+@property (nonatomic, strong) NSArray *senseTecnicDataPoints;
+@property (nonatomic, strong) NSArray *currrentMapAnnotations;
+@property (nonatomic) int consecutiveStillCount;
+@property (nonatomic, strong) NSMutableArray *recentTransportTypeLog;
+
+//map overlays
+@property (nonatomic, strong) PathLine *myPathLine;
+@property (nonatomic, strong) MKPolyline *currentPolylineOverlay;
 
 //timers
 @property (nonatomic, strong) Timer *locationTimer;
-@property (nonatomic, strong) Timer *statusLightTimer;
+@property (nonatomic, strong) Timer *oneSecondTimer;
 
 //sensor managers
 @property (nonatomic, strong) CoreLocationController *locationController;
@@ -51,9 +56,12 @@ typedef enum {
 
 //UI outlets
 @property (weak, nonatomic) IBOutlet UIImageView *statusLight;
-@property (nonatomic, strong) IBOutlet MKMapView *myMapView;
+@property (nonatomic, weak) IBOutlet MKMapView *myMapView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *inferredTransportSegControl;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *userEnteredTransportSegControl;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *locateMeButton;
+@property (weak, nonatomic) IBOutlet UIToolbar *statusToolbar;
+@property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
 
 
 @end

@@ -34,13 +34,15 @@ if (!self.tripActive) {
     [self.navigationController pushViewController:myAppDelegate.mapViewController animated:YES];
     
     self.mapButton.enabled = YES;
-    [self.mapButton setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
+    [self.mapButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 }
 
 else {
     
     [myAppDelegate.mapViewController viewDidUnload];
     [myAppDelegate setMapViewController:nil];
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
     
     [self.tripToggleButton setTitle:@"Start Trip" forState:UIControlStateNormal];
     self.tripActive = NO;
@@ -54,10 +56,8 @@ else {
 AppDelegate *myAppDelegate = [AppDelegate sharedAppdelegate];
 
 [self.navigationController pushViewController:myAppDelegate.mapViewController animated:YES];
+    
 }
-
-
-
 
 /*
  *  Handle system events
@@ -74,12 +74,6 @@ self.tripActive = NO;
 
 }
 
-- (void)viewDidDisappear:(BOOL)animated {
-
-NSLog(@"setupview did dissapear");
-}
-
-
 - (void)viewDidUnload
 {
 self.tripToggleButton = nil; 
@@ -88,11 +82,6 @@ self.tripToggleButton = nil;
 // Release any retained subviews of the main view.
 
 NSLog(@"setup view did unload");
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
 @end
